@@ -4,6 +4,53 @@ All notable changes to `@automattic/blocks-engine` will be documented in this fi
 
 This project follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
+## [0.4.0] - 2026-11-13
+
+### Added
+- configure native component releases
+- add region effect manifest
+- static-HTML-to-block-theme reconstruction pipeline (v0.2.0)
+- add reconstruct fidelity benchmark + ratchet harness
+- site-to-theme assembly + blocks-engine npm packaging
+
+### Changed
+- Preserve native text/video grids and editable Media Library videos
+- Keep card and callout content through conversion and canonicalize
+- neutral capture vocabulary for Blocks Engine capture evidence
+- add provider-neutral form materializer seam
+- centralize theme asset URL policy
+- share one @font-face source parser
+- run pnpm 11 on Node 22
+- Preserve responsive site fidelity in artifact imports
+- update canonicalize pool sentinel
+- assert fixture87 round-trip output, not the fixture itself
+- cover region manifest export
+- Reduce decorative SVG preserve-dom fallbacks
+- Preserve source nav anchor CSS on core navigation
+- figma-transformer: improve FSE responsive parity
+- blocks-engine: structured convert report (envelope + fallback inventory + metrics)
+- blocks-engine 0.2.2: add opt-in structuredStrategy for no-CSS-carry blocks reconstruction
+- blocks-engine 0.2.1: bundle the WordPress runtime — ~491MB → ~53MB consumer install
+- expand reconstruct benchmark coverage (9 archetypes + whole-page)
+
+### Fixed
+- retain static attributes on label hosts
+- preserve associated label hosts
+- keep source block margins on paragraphs lowered from non-paragraph text
+- declare the Node 22.13 floor pnpm 11 requires
+- preserve button label span boundaries
+- derive reveal neutralization from runtime evidence
+- preserve core file validity
+- normalize standalone SVG namespaces
+- keep media-forward heroes native
+- generate query loop for posts index
+- aggregate repeated conversion diagnostics
+- project flex anchor selectors through markers [AI: OpenAI GPT-5.6 Terra via OpenCode]
+- keep flex button classes save-compatible [AI: OpenAI GPT-5.6 Terra via OpenCode]
+- make region-effect analyzer fail closed and typed
+- preserve custom property paint through Gutenberg save
+- align @wordpress deps to one release to cut install size ~75%
+
 ## [0.3.5] - 2026-10-27
 
 ### Changed
